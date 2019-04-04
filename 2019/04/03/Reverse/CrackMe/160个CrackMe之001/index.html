@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="学习小记" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="160个新手练习CrackMe，第1个。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="160个CrackMe之001">
+<meta property="og:url" content="http://yoursite.com/2019/04/03/Reverse/CrackMe/160个CrackMe之001/index.html">
+<meta property="og:site_name" content="学习小记">
+<meta property="og:description" content="160个新手练习CrackMe，第1个。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-04-03T02:39:01.860Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="160个CrackMe之001">
+<meta name="twitter:description" content="160个新手练习CrackMe，第1个。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/04/03/Reverse/CrackMe/160个CrackMe之001/">
+
+
+
+
+
+  <title>160个CrackMe之001 | 学习小记</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?1ed59fb2390dbf29c09c3fb0bd3a9026";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">学习小记</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/03/Reverse/CrackMe/160个CrackMe之001/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Flyduang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="学习小记">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">160个CrackMe之001</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-03T00:00:00+08:00">
+                2019-04-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/逆向分析/" itemprop="url" rel="index">
+                    <span itemprop="name">逆向分析</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/逆向分析/CrackMe/" itemprop="url" rel="index">
+                    <span itemprop="name">CrackMe</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>160个新手练习CrackMe，第1个。</p>
+<a id="more"></a>
+<h2 id="0x1-环境"><a href="#0x1-环境" class="headerlink" title="0x1 环境"></a>0x1 环境</h2><ul>
+<li>系统：Windows XP SP3</li>
+<li>软件：Acid_burn.exe</li>
+<li>工具：PEiD v0.95、吾爱破解专用版OllyDbg</li>
+</ul>
+<h2 id="0x2-分析"><a href="#0x2-分析" class="headerlink" title="0x2 分析"></a>0x2 分析</h2><p>运行程序，有三处需要分析的位置。一处初始弹窗，一处注册码注册，还有一处用户名与注册码注册。</p>
+<p>先进行查壳，无壳，Borland Delphi 3.0 编写。</p>
+
+<p>首先去除初始弹窗。</p>
+
+<p>将程序拖入OD，搜素弹窗内容字符串，定位弹窗函数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">0042F784   .  6A 00         push 0x0</span><br><span class="line">0042F786   .  B9 A0F74200   mov ecx,Acid_bur.0042F7A0                ;  hello you have to kill me!</span><br><span class="line">0042F78B   .  BA BCF74200   mov edx,Acid_bur.0042F7BC                ;  Welcome to this Newbies Crackme made by ACiD BuRN [CracKerWoRlD]</span><br><span class="line">0042F790   .  A1 480A4300   mov eax,dword ptr ds:[0x430A48]</span><br><span class="line">0042F795   .  8B00          mov eax,dword ptr ds:[eax]</span><br><span class="line">0042F797   .  E8 D4A9FFFF   call Acid_bur.0042A170                   ;  弹窗函数</span><br></pre></td></tr></table></figure>
+<p>将 0x0042F784 处的<code>push 0x0</code>修改为<code>retn</code>，即可去除弹窗。</p>
+<p>然后分析只需要注册码的注册窗口。</p>
+<p>输入假码，获得失败提示。</p>
+
+<p>OD中搜索字符串，确定该错误提示，定位注册函数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">0042F48A  |.  8D45 FC       lea eax,[local.1]</span><br><span class="line">0042F48D  |.  BA 40F54200   mov edx,Acid_bur.0042F540                ;  Hello</span><br><span class="line">0042F492  |.  E8 7142FDFF   call Acid_bur.00403708</span><br><span class="line">0042F497  |.  8D45 F8       lea eax,[local.2]</span><br><span class="line">0042F49A  |.  BA 50F54200   mov edx,Acid_bur.0042F550                ;  Dude!</span><br><span class="line">0042F49F  |.  E8 6442FDFF   call Acid_bur.00403708</span><br><span class="line">0042F4A4  |.  FF75 FC       push [local.1]                           ;  Acid_bur.0042F540</span><br><span class="line">0042F4A7  |.  68 60F54200   push Acid_bur.0042F560</span><br><span class="line">0042F4AC  |.  FF75 F8       push [local.2]                           ;  Acid_bur.0042F550</span><br><span class="line">0042F4AF  |.  8D45 F4       lea eax,[local.3]</span><br><span class="line">0042F4B2  |.  BA 03000000   mov edx,0x3</span><br><span class="line">0042F4B7  |.  E8 F044FDFF   call Acid_bur.004039AC                   ;  获得正确注册码</span><br><span class="line">0042F4BC  |.  8D55 F0       lea edx,[local.4]</span><br><span class="line">0042F4BF  |.  8B83 E0010000 mov eax,dword ptr ds:[ebx+0x1E0]</span><br><span class="line">0042F4C5  |.  E8 8EB5FEFF   call Acid_bur.0041AA58                   ;  获取输入注册码</span><br><span class="line">0042F4CA  |.  8B45 F0       mov eax,[local.4]</span><br><span class="line">0042F4CD  |.  8B55 F4       mov edx,[local.3]</span><br><span class="line">0042F4D0  |.  E8 2745FDFF   call Acid_bur.004039FC                   ;  验证函数</span><br><span class="line">0042F4D5  |.  75 1A         jnz short Acid_bur.0042F4F1              ;  跳转为注册失败，不跳转为注册成功</span><br></pre></td></tr></table></figure>
+<p> 0x0042F4D0 处函数的参数为正确注册码与输入注册码，在该处下断，得到正确的注册码为<strong>Hello Dude!</strong>。</p>
+<p>最后分析需要用户名和注册码共同注册的窗口。</p>
+<p>输入任意用户名与假码，获得错误提示。</p>
+
+<p>OD中搜索该字符串，确定字符串位置，定位注册函数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br></pre></td><td class="code"><pre><span class="line">0042F9BF  |.  8D55 F0       lea edx,[local.4]</span><br><span class="line">0042F9C2  |.  8B83 DC010000 mov eax,dword ptr ds:[ebx+0x1DC]</span><br><span class="line">0042F9C8  |.  E8 8BB0FEFF   call Acid_bur.0041AA58                   ;  获取用户名</span><br><span class="line">0042F9CD  |.  8B45 F0       mov eax,[local.4]</span><br><span class="line">0042F9D0  |.  E8 DB40FDFF   call Acid_bur.00403AB0</span><br><span class="line">0042F9D5  |.  A3 6C174300   mov dword ptr ds:[0x43176C],eax          ;  Acid_bur.0042FAEA</span><br><span class="line">0042F9DA  |.  8D55 F0       lea edx,[local.4]</span><br><span class="line">0042F9DD  |.  8B83 DC010000 mov eax,dword ptr ds:[ebx+0x1DC]</span><br><span class="line">0042F9E3  |.  E8 70B0FEFF   call Acid_bur.0041AA58</span><br><span class="line">0042F9E8  |.  8B45 F0       mov eax,[local.4]</span><br><span class="line">0042F9EB  |.  0FB600        movzx eax,byte ptr ds:[eax]              ;  获取用户名第一个字符</span><br><span class="line">0042F9EE  |.  8BF0          mov esi,eax                              ;  Acid_bur.0042FAEA</span><br><span class="line">0042F9F0  |.  C1E6 03       shl esi,0x3                              ;  逻辑左移3位</span><br><span class="line">0042F9F3  |.  2BF0          sub esi,eax                              ;  左移后的结果减去原字符</span><br><span class="line">0042F9F5  |.  8D55 EC       lea edx,[local.5]</span><br><span class="line">0042F9F8  |.  8B83 DC010000 mov eax,dword ptr ds:[ebx+0x1DC]</span><br><span class="line">0042F9FE  |.  E8 55B0FEFF   call Acid_bur.0041AA58</span><br><span class="line">0042FA03  |.  8B45 EC       mov eax,[local.5]</span><br><span class="line">0042FA06  |.  0FB640 01     movzx eax,byte ptr ds:[eax+0x1]          ;  获取用户名第二个字符</span><br><span class="line">0042FA0A  |.  C1E0 04       shl eax,0x4                              ;  逻辑左移4位</span><br><span class="line">0042FA0D  |.  03F0          add esi,eax                              ;  加上上一次的结果</span><br><span class="line">0042FA0F  |.  8935 54174300 mov dword ptr ds:[0x431754],esi</span><br><span class="line">0042FA15  |.  8D55 F0       lea edx,[local.4]</span><br><span class="line">0042FA18  |.  8B83 DC010000 mov eax,dword ptr ds:[ebx+0x1DC]</span><br><span class="line">0042FA1E  |.  E8 35B0FEFF   call Acid_bur.0041AA58</span><br><span class="line">0042FA23  |.  8B45 F0       mov eax,[local.4]</span><br><span class="line">0042FA26  |.  0FB640 03     movzx eax,byte ptr ds:[eax+0x3]          ;  获取用户名第4个字符</span><br><span class="line">0042FA2A  |.  6BF0 0B       imul esi,eax,0xB                         ;  与0xB相乘</span><br><span class="line">0042FA2D  |.  8D55 EC       lea edx,[local.5]</span><br><span class="line">0042FA30  |.  8B83 DC010000 mov eax,dword ptr ds:[ebx+0x1DC]</span><br><span class="line">0042FA36  |.  E8 1DB0FEFF   call Acid_bur.0041AA58</span><br><span class="line">0042FA3B  |.  8B45 EC       mov eax,[local.5]</span><br><span class="line">0042FA3E  |.  0FB640 02     movzx eax,byte ptr ds:[eax+0x2]          ;  获取用户名第3个字符</span><br><span class="line">0042FA42  |.  6BC0 0E       imul eax,eax,0xE                         ;  与0xE相乘</span><br><span class="line">0042FA45  |.  03F0          add esi,eax                              ;  与上一次结果相加</span><br><span class="line">0042FA47  |.  8935 58174300 mov dword ptr ds:[0x431758],esi</span><br><span class="line">0042FA4D  |.  A1 6C174300   mov eax,dword ptr ds:[0x43176C]</span><br><span class="line">0042FA52  |.  E8 D96EFDFF   call Acid_bur.00406930</span><br><span class="line">0042FA57  |.  83F8 04       cmp eax,0x4</span><br><span class="line">0042FA5A  |.  7D 1D         jge short Acid_bur.0042FA79              ;  用户名长度需要大于等于4</span><br><span class="line">0042FA5C  |.  6A 00         push 0x0</span><br><span class="line">0042FA5E  |.  B9 74FB4200   mov ecx,Acid_bur.0042FB74                ;  Try Again!</span><br><span class="line">0042FA63  |.  BA 80FB4200   mov edx,Acid_bur.0042FB80                ;  Sorry , The serial is incorect !</span><br><span class="line">0042FA68  |.  A1 480A4300   mov eax,dword ptr ds:[0x430A48]</span><br><span class="line">0042FA6D  |.  8B00          mov eax,dword ptr ds:[eax]</span><br><span class="line">0042FA6F  |.  E8 FCA6FFFF   call Acid_bur.0042A170</span><br><span class="line">0042FA74  |.  E9 BE000000   jmp Acid_bur.0042FB37</span><br><span class="line">0042FA79  |&gt;  8D55 F0       lea edx,[local.4]</span><br><span class="line">0042FA7C  |.  8B83 DC010000 mov eax,dword ptr ds:[ebx+0x1DC]</span><br><span class="line">0042FA82  |.  E8 D1AFFEFF   call Acid_bur.0041AA58</span><br><span class="line">0042FA87  |.  8B45 F0       mov eax,[local.4]</span><br><span class="line">0042FA8A  |.  0FB600        movzx eax,byte ptr ds:[eax]              ;  取出用户名第一个字符</span><br><span class="line">0042FA8D  |.  F72D 50174300 imul dword ptr ds:[0x431750]             ;  与0x29相乘</span><br><span class="line">0042FA93  |.  A3 50174300   mov dword ptr ds:[0x431750],eax          ;  Acid_bur.0042FAEA</span><br><span class="line">0042FA98  |.  A1 50174300   mov eax,dword ptr ds:[0x431750]</span><br><span class="line">0042FA9D  |.  0105 50174300 add dword ptr ds:[0x431750],eax          ;  结果与结果相加</span><br><span class="line">0042FAA3  |.  8D45 FC       lea eax,[local.1]</span><br><span class="line">0042FAA6  |.  BA ACFB4200   mov edx,Acid_bur.0042FBAC                ;  CW</span><br><span class="line">0042FAAB  |.  E8 583CFDFF   call Acid_bur.00403708</span><br><span class="line">0042FAB0  |.  8D45 F8       lea eax,[local.2]</span><br><span class="line">0042FAB3  |.  BA B8FB4200   mov edx,Acid_bur.0042FBB8                ;  CRACKED</span><br><span class="line">0042FAB8  |.  E8 4B3CFDFF   call Acid_bur.00403708</span><br><span class="line">0042FABD  |.  FF75 FC       push [local.1]                           ;  Acid_bur.0042FBAC</span><br><span class="line">0042FAC0  |.  68 C8FB4200   push Acid_bur.0042FBC8                   ;  -</span><br><span class="line">0042FAC5  |.  8D55 E8       lea edx,[local.6]</span><br><span class="line">0042FAC8  |.  A1 50174300   mov eax,dword ptr ds:[0x431750]</span><br><span class="line">0042FACD  |.  E8 466CFDFF   call Acid_bur.00406718                   ;  将上一次计算结果的十进制转为字符串</span><br><span class="line">0042FAD2  |.  FF75 E8       push [local.6]</span><br><span class="line">0042FAD5  |.  68 C8FB4200   push Acid_bur.0042FBC8                   ;  -</span><br><span class="line">0042FADA  |.  FF75 F8       push [local.2]                           ;  Acid_bur.0042FBB8</span><br><span class="line">0042FADD  |.  8D45 F4       lea eax,[local.3]</span><br><span class="line">0042FAE0  |.  BA 05000000   mov edx,0x5</span><br><span class="line">0042FAE5  |.  E8 C23EFDFF   call Acid_bur.004039AC                   ;  获取正确注册码</span><br><span class="line">0042FAEA  |.  8D55 F0       lea edx,[local.4]</span><br><span class="line">0042FAED  |.  8B83 E0010000 mov eax,dword ptr ds:[ebx+0x1E0]</span><br><span class="line">0042FAF3  |.  E8 60AFFEFF   call Acid_bur.0041AA58                   ;  获取输入假码</span><br><span class="line">0042FAF8  |.  8B55 F0       mov edx,[local.4]                        ;  假码</span><br><span class="line">0042FAFB  |.  8B45 F4       mov eax,[local.3]                        ;  真码</span><br><span class="line">0042FAFE  |.  E8 F93EFDFF   call Acid_bur.004039FC                   ;  验证函数</span><br><span class="line">0042FB03  |.  75 1A         jnz short Acid_bur.0042FB1F              ;  跳转为注册失败，不跳转为注册成功</span><br></pre></td></tr></table></figure>
+<p>分析注册算法为：</p>
+<ol>
+<li>判断用户名的长度是否大于等于4。</li>
+<li><p>用户名第一个字符的ascii码 * 0x29。</p>
+</li>
+<li><p>第一步结果与自己相加，即乘2。</p>
+</li>
+<li><p>将第二步结果的十进制用字符串表示。</p>
+</li>
+<li><p>连接字符串<code>CW-&lt;第三步字符串&gt;-CRACKED</code>。</p>
+</li>
+</ol>
+<p>例如用户名为<strong>test</strong>，则注册码为<strong>CW-9512-CRACKED</strong>。</p>
+<h2 id="0x3-参考"><a href="#0x3-参考" class="headerlink" title="0x3 参考"></a>0x3 参考</h2><ul>
+<li><a href="https://www.52pojie.cn/thread-264393-1-1.html" target="_blank" rel="noopener">[反汇编练习]160个CrackMe之001</a></li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/03/Reverse/CrackMe/160个CrackMe之003/" rel="next" title="160个CrackMe之003">
+                <i class="fa fa-chevron-left"></i> 160个CrackMe之003
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/04/03/Reverse/Software/WinRAR去广告窗口/" rel="prev" title="WinRAR去广告窗口">
+                WinRAR去广告窗口 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="Flyduang">
+            
+              <p class="site-author-name" itemprop="name">Flyduang</p>
+              <p class="site-description motion-element" itemprop="description">一点一滴的学习记录。</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#0x1-环境"><span class="nav-number">1.</span> <span class="nav-text">0x1 环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x2-分析"><span class="nav-number">2.</span> <span class="nav-text">0x2 分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#0x3-参考"><span class="nav-number">3.</span> <span class="nav-text">0x3 参考</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Flyduang</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
